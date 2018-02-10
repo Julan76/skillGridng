@@ -1,0 +1,238 @@
+{
+  "domains": [    
+    {
+      "domain": "Secteur d'activité",
+      "skills": [
+        { "text": "Grande distribution" },
+        { "text": "Industrie" },
+		{ "text": "Transport" },
+		{ "text": "Administration / Secteur Public" },
+		{ "text": "Assurance" },
+		{ "text": "Santé Social Emploi" },
+		{ "text": "Voyage & Services" },
+		{ "text": "Télécom & Média" },
+		{ "text": "Secteur énergétique" },
+		{ "text": "Aero & Space" },
+		{ "text": "Défense" },
+		{ "text": "Finance & Banque" }
+	]
+    },
+	{
+      "domain": "Compétence fonctionnelle",
+      "skills": [
+        { "text": "Marketing" },
+        { "text": "Finance" },
+        { "text": "RH" },
+        { "text": "Logistique" },
+        { "text": "Achats" },
+		{ "text": "Ventes" },
+        { "text": "Comptabilité" }
+      ]
+    },
+    {
+      "domain": "Grands domaines techniques",
+      "skills": [
+		{ "text": "Gouvernance de la données" },
+		{ "text": "Gestion des méta données" },
+        { "text": "Modélisation des données" },
+		{ "text": "Stockage de l'information" },
+		{ "text": "Big Data" },
+		{ "text": "Alimentation (ETL/ELT)" },
+		{ "text": "Entreprise Service Bus (ESB)" },
+		{ "text": "Master Data Management (MDM)" },
+        { "text": "Data Quality Management (DQM)" },
+        { "text": "Reporting" },
+        { "text": "Système d'information Géographique" },
+        { "text": "Data mining" },
+        { "text": "Analyse de données" },
+		{ "text": "Statistique" },
+		{ "text": "Data Science" },
+        { "text": "Élaboration et suivi budgétaire" }
+      ]
+    },
+    {
+      "domain": "SGBD",
+      "skills": [
+        { "text": "Oracle" },
+        { "text": "DB2" },
+        { "text": "SQL Server" },
+        { "text": "MySQL" },
+        { "text": "SyBase IQ" },
+        { "text": "SyBase ASE" },
+        { "text": "Informix" },
+        { "text": "Vertorwise" },
+        { "text": "PostgreSql" },
+        { "text": "SAP HANA" },
+		{ "text": "Exadata" },
+		{ "text": "Teradata" },
+		{ "text": "Netezza" }
+      ]
+    },
+    {
+      "domain": "ETL",
+      "skills": [
+        { "text": "Informatica" },
+        { "text": "ODI" },
+        { "text": "Datastage" },
+        { "text": "AB Initio" },
+        { "text": "SSIS" },
+        { "text": "Talend" },
+        { "text": "Stambia" },
+        { "text": "Oracle WareHouse Builder" },
+        { "text": "Sagent" },
+        { "text": "OTIC / Hummingbird Genio" },
+        { "text": "SAP Data Integrator" }
+      ]
+    },
+	{
+      "domain": "ESB",
+      "skills": [
+        { "text": "ESB Talend" },
+        { "text": "Tibcot" },
+        { "text": "WebMethods" }
+      ]
+    },
+    {
+      "domain": "Reporting",
+      "skills": [
+        { "text": "SAP BO - Webi/Deski" },
+        { "text": "SAP BO - Crystal Report" },
+        { "text": "SSAS" },
+        { "text": "SSRS" },
+		{ "text": "Microsoft Power BI" },
+        { "text": "OBIEE" },
+		{ "text": "Oracle BI Publisher" },
+        { "text": "Qlik View" },
+        { "text": "Qlik Sence" },
+        { "text": "MicroStrategy" },
+        { "text": "Harry" },
+        { "text": "JasperSoft" },
+        { "text": "Cognos" },
+        { "text": "Birt" },
+        { "text": "Roambi" },
+        { "text": "Tableau Software" }
+      ]
+    },
+	{
+      "domain": "Data Viz",
+      "skills": [
+        { "text": "D3JS" },
+        { "text": "Angular JS" }
+      ]
+    },
+    {
+      "domain": "Statistique",
+      "skills": [
+        { "text": "SAS" },
+        { "text": "Data mining" },
+        { "text": "R" },
+        { "text": "SPSS" },
+        { "text": "Matlab" }
+      ]
+    },
+	{
+      "domain": "Système d'information Géographique",
+      "skills": [
+        { "text": "Galigeo" },
+        { "text": "Esri" }
+      ]
+    },
+    {
+      "domain": "Big Data",
+      "skills": [
+        { "text": "Hadoop (Hive, Pig, ...)" },
+        { "text": "Cloudera" },
+        { "text": "HortonWorks" },
+        { "text": "Pivotal" },
+        { "text": "Elasticsearch" },
+        { "text": "MapR" },
+        { "text": "Kibana" },
+        { "text": "Spark" },
+		{ "text": "Kafka" },
+		{ "text": "Datastax" },
+        { "text": "Impala" }
+      ]
+    },
+    {
+      "domain": "NoSQL",
+      "skills": [
+        { "text": "HBase" },
+        { "text": "MongoDB" },
+        { "text": "Couchbase" },
+        { "text": "Amazon DynamoDB" },
+        { "text": "Amazon Redshift" },
+        { "text": "Neo4J" },
+        { "text": "Cassandra" }
+      ]
+    },
+	{
+      "domain": "Cloud",
+      "skills": [
+        { "text": "Amazon Web Services" },
+        { "text": "Microsoft Azure" }
+      ]
+    },
+    {
+      "domain": "MDM / DQM",
+      "skills": [
+        { "text": "MDM Informatica" },
+        { "text": "IDQ Informatica" },
+        { "text": "DQM Talend" },
+        { "text": "MDM Talend" },
+        { "text": "Ataccama" },
+        { "text": "Orchestra" },
+        { "text": "Semarchy" },
+        { "text": "SAP MDM" },
+        { "text": "Oracle MDM" }
+      ]
+    },
+    {
+      "domain": "Langages de Developpement",
+      "skills": [
+        { "text": "Java / J2EE" },
+        { "text": "Shell Unix" },
+        { "text": "C / C++" },
+        { "text": "C # / DotNet" },
+        { "text": "VBA / VBS" },
+        { "text": "Python" },
+        { "text": "Scala" }
+      ]
+    },
+	{
+      "domain": "Outils de gestion de conf et intégration",
+      "skills": [
+        { "text": "GIT" },
+        { "text": "SVN" },
+        { "text": "Jenkins" }
+      ]
+    },
+    {
+      "domain": "Outils de qualification",
+      "skills": [
+        { "text": "HP QC/ALM (Quality Center)" },
+        { "text": "HP QTP (Quick Test Pro)" },
+        { "text": "Salomé" },
+        { "text": "Kalistick" },
+        { "text": "Selenide (scénario et exécution)" },
+        { "text": "Testrail (suivi de test)" }
+      ]
+    },
+    {
+      "domain": "Méthodologie",
+      "skills": [
+        { "text": "Stratégie de tests/ plans de tests" },
+        { "text": "Méthode Agile" },
+        { "text": "Méthode DeVops" },
+        { "text": "Contexte international/Multi-langue" }
+      ]
+    },
+    {
+      "domain": "Langues",
+      "skills": [
+        { "text": "Anglais" },
+        { "text": "Allemand" },
+        { "text": "Espagnol" }
+      ]
+    }
+  ]
+}
