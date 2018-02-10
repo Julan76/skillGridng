@@ -9,7 +9,7 @@ import {Domain} from './dto/domain';
 })
 export class AppComponent implements OnInit {
 
-  data=null;
+  data;
   selectedDomain;
 
   constructor(private jsonSkillsService:JsonSkillsService) {
@@ -27,5 +27,6 @@ export class AppComponent implements OnInit {
   }
   onSelect(domain: Domain): void {
     this.selectedDomain = domain;
+    console.log("le domain ",domain);
   }
 }

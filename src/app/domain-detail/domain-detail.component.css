@@ -1,0 +1,9 @@
+#skills {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#skills td, #skills th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}

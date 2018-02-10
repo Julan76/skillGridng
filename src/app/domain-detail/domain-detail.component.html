@@ -1,11 +1,32 @@
-<div *ngIf="domain">
+<pre></pre>            <mat-icon>home</mat-icon>
 
-  <h2>{{ domain.domain | uppercase }} Details</h2>
+<div *ngIf="domain"  class="example-container mat-elevation-z8">
 
-  <div>
-    <label>name:
-      <input [(ngModel)]="domain.domain" placeholder="name"/>
-    </label>
-  </div>
+      <table id="skills">
+        <tr>
+          <th></th>
+          <th>Niveau</th>
+          <th>0
+          <p>Pas de connaissances</p>
+          </th>
+          <th>1
+            <p>Quelques Connaissances</p>
+          </th>
+          <th>2
+            <p>Bonnes Connaissances</p>
+          </th>
+          <th>3
+          <p>Expert</p>
+          </th>
+        </tr >
+        <tr  *ngFor="let skill of domain.skills"
+        >
+          <td>{{skill.text}}</td>
+        </tr>
+
+
+      </table>
+
+
 
 </div>
