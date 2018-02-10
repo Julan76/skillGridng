@@ -1,0 +1,11 @@
+<div *ngIf="domain">
+
+  <h2>{{ domain.domain | uppercase }} Details</h2>
+
+  <div>
+    <label>name:
+      <input [(ngModel)]="domain.domain" placeholder="name"/>
+    </label>
+  </div>
+
+</div>

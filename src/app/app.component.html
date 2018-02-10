@@ -12,8 +12,10 @@
 </div>
 
 <mat-grid-list cols="5" rowHeight="27px">
-  <mat-grid-tile *ngFor="let dom of data"
+  <mat-grid-tile *ngFor="let dom of data"  (click)="onSelect(dom)"
+                 [class.selected]="dom === selectedDomain"
                  ><button  mat-button>{{dom.domain}}</button>
   </mat-grid-tile>
-
 </mat-grid-list>
+
+<app-domain-detail [domain]="selectedDomain"></app-domain-detail>

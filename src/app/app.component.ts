@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {JsonSkillsService} from './services/json-skills.service';
+import {Domain} from './dto/domain';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,7 @@ import {JsonSkillsService} from './services/json-skills.service';
 export class AppComponent implements OnInit {
 
   data=null;
+  selectedDomain;
 
   constructor(private jsonSkillsService:JsonSkillsService) {
   }
@@ -22,5 +24,8 @@ export class AppComponent implements OnInit {
           console.log(this.data);
         },
         e=>console.log('error while getting JSON',e));
+  }
+  onSelect(domain: Domain): void {
+    this.selectedDomain = domain;
   }
 }
