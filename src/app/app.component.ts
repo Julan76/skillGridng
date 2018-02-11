@@ -21,17 +21,24 @@ export class AppComponent implements OnInit {
     this.jsonSkillsService.getJSON()
       .subscribe(response => {
           this.data=response.domains;
-          console.log(this.data);
         },
         e=>console.log('error while getting JSON',e));
   }
   onSelect(domain: Domain): void {
     this.selectedDomain = domain;
-    if(!domain.skills[0].grade) {
-      domain.skills.forEach((item,index)=> {
-        item.grade=0;
-      });
+
+  }
+  save():void {
+
+    for (let i in this.data) {
+      for(let j in this.data[i].skills){
+        for(let k in this.data[i].skills[j].tabs){
+          if(this.data[i].skills[j].tabs[k].val){
+            this.data[i].skills[j].grade=this.data[i].skills[j].tabs[k].key;
+          }
+        }
+      }
     }
-    console.log("le domain ",domain);
+    console.log(this.data);
   }
 }
