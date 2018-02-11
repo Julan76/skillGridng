@@ -9,3 +9,7 @@
   border: 1px solid #ddd;
   padding: 6px;
 }
+
+::ng-deep .mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-disabled.mat-checkbox-indeterminate .mat-checkbox-background {
+  background-color: #ff4081;
+}

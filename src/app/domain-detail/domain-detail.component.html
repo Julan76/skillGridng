@@ -5,25 +5,28 @@
       <table id="skills">
         <tr>
           <th></th>
-          <th  matTooltip="Pas de connaissances ">0
-          <p>Pas de connaissances <mat-icon>info</mat-icon></p>
+          <th  >0
+          <p>Pas de connaissances <mat-icon matTooltip="Pas de connaissances ">info</mat-icon></p>
           </th>
-          <th  matTooltip="La mise en œuvre de la compétence n'est pas intuitive pour le collaborateur. Il lui est parfois nécessaire de revenir sur la théorie, sur le mode d'emploi ou de faire appel à un référent. ">1
-            <p>Quelques Connaissances <mat-icon>info</mat-icon> </p>
+          <th  >1
+            <p>Quelques Connaissances <mat-icon matTooltip="La mise en œuvre de la compétence n'est pas intuitive pour le collaborateur. Il lui est parfois nécessaire de revenir sur la théorie, sur le mode d'emploi ou de faire appel à un référent. ">info</mat-icon> </p>
           </th>
-          <th  matTooltip="Dans les situations standard, le collaborateur met en œuvre la compétence dans toutes ses dimensions, de façon systématique et autonome.">2
-            <p>Bonnes Connaissances  <mat-icon>info</mat-icon></p>
+          <th >2
+            <p>Bonnes Connaissances  <mat-icon  matTooltip="Dans les situations standard, le collaborateur met en œuvre la compétence dans toutes ses dimensions, de façon systématique et autonome.">info</mat-icon></p>
           </th>
-          <th  matTooltip="Dans tous types de situations, le collaborateur met en œuvre la compétence de façon systématique et judicieuse. Il optimise et il est capable de former. Il est reconnu comme un référent.">3
-          <p>Expert  <mat-icon>info</mat-icon></p>
+          <th  >3
+          <p>Expert  <mat-icon matTooltip="Dans tous types de situations, le collaborateur met en œuvre la compétence de façon systématique et judicieuse. Il optimise et il est capable de former. Il est reconnu comme un référent.">info</mat-icon></p>
           </th>
         </tr >
         <tr  *ngFor="let skill of domain.skills">
           <td>{{skill.text}}</td>
-          <td style="text-align:center"><mat-radio-button  [checked]="skill.grade==0"></mat-radio-button></td>
-          <td style="text-align:center"> <mat-radio-button [checked]="skill.grade==1"></mat-radio-button> </td>
-          <td style="text-align:center"> <mat-radio-button  [checked]="skill.grade==2"></mat-radio-button> </td>
-          <td style="text-align:center"><mat-radio-button  [checked]="skill.grade==3"> </mat-radio-button> </td>
+          <td  *ngFor="let item of skill.tabs; let i=index"
+            style="text-align:center">
+            <mat-checkbox [(ngModel)]="item.val" [ngClass] = "{'my-color': item.val==true}" [disabled]="item.val==true"  (change)="update(skill,i)"
+             ></mat-checkbox >
+
+
+          </td>
         </tr>
 
 
