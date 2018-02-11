@@ -27,6 +27,11 @@ export class AppComponent implements OnInit {
   }
   onSelect(domain: Domain): void {
     this.selectedDomain = domain;
+    if(!domain.skills[0].grade) {
+      domain.skills.forEach((item,index)=> {
+        item.grade=0;
+      });
+    }
     console.log("le domain ",domain);
   }
 }

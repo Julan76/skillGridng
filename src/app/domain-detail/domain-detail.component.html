@@ -1,27 +1,29 @@
-<pre></pre>            <mat-icon>home</mat-icon>
+<pre></pre>
 
 <div *ngIf="domain"  class="example-container mat-elevation-z8">
 
       <table id="skills">
         <tr>
           <th></th>
-          <th>Niveau</th>
-          <th>0
-          <p>Pas de connaissances</p>
+          <th  matTooltip="Pas de connaissances ">0
+          <p>Pas de connaissances <mat-icon>info</mat-icon></p>
           </th>
-          <th>1
-            <p>Quelques Connaissances</p>
+          <th  matTooltip="La mise en œuvre de la compétence n'est pas intuitive pour le collaborateur. Il lui est parfois nécessaire de revenir sur la théorie, sur le mode d'emploi ou de faire appel à un référent. ">1
+            <p>Quelques Connaissances <mat-icon>info</mat-icon> </p>
           </th>
-          <th>2
-            <p>Bonnes Connaissances</p>
+          <th  matTooltip="Dans les situations standard, le collaborateur met en œuvre la compétence dans toutes ses dimensions, de façon systématique et autonome.">2
+            <p>Bonnes Connaissances  <mat-icon>info</mat-icon></p>
           </th>
-          <th>3
-          <p>Expert</p>
+          <th  matTooltip="Dans tous types de situations, le collaborateur met en œuvre la compétence de façon systématique et judicieuse. Il optimise et il est capable de former. Il est reconnu comme un référent.">3
+          <p>Expert  <mat-icon>info</mat-icon></p>
           </th>
         </tr >
-        <tr  *ngFor="let skill of domain.skills"
-        >
+        <tr  *ngFor="let skill of domain.skills">
           <td>{{skill.text}}</td>
+          <td style="text-align:center"><mat-radio-button  [checked]="skill.grade==0"></mat-radio-button></td>
+          <td style="text-align:center"> <mat-radio-button [checked]="skill.grade==1"></mat-radio-button> </td>
+          <td style="text-align:center"> <mat-radio-button  [checked]="skill.grade==2"></mat-radio-button> </td>
+          <td style="text-align:center"><mat-radio-button  [checked]="skill.grade==3"> </mat-radio-button> </td>
         </tr>
 
 
