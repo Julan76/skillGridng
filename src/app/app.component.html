@@ -9,7 +9,7 @@
       <mat-grid-tile>
         Matricule: &nbsp;
         <mat-form-field  style="width: 300px;" class="example-full-width">
-          <input maxlength="8" matInput placeholder="Saisis ton matricule (Mot de passe WTR)">
+          <input [ngModelOptions]="{standalone: true}" [(ngModel)]="matricule" maxlength="8" matInput placeholder="Saisis ton matricule (Mot de passe WTR)">
         </mat-form-field>
       </mat-grid-tile>
       <mat-grid-tile>

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-import { AppComponent } from './app.component';
+import {AppComponent, SnackBarOverviewExampleComponent} from './app.component';
 import {MyOwnCustomMaterialModuleModule} from './my-own-custom-material.module';
 import {JsonSkillsService} from './services/json-skills.service';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
@@ -14,10 +14,10 @@ import {FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     DomainDetailComponent,
-    DialogOverviewExampleDialogComponent
+    DialogOverviewExampleDialogComponent,SnackBarOverviewExampleComponent
   ],
   entryComponents: [
-    DialogOverviewExampleDialogComponent
+    DialogOverviewExampleDialogComponent,SnackBarOverviewExampleComponent
   ],
 
   imports: [
