@@ -60,6 +60,8 @@ export class DomainDetailComponent implements OnInit,OnChanges,AfterViewChecked 
     });
 
     dialogRef.afterClosed().subscribe(result => {
+      if(result){
+
       this.newSkill = result;
       this.domain.skills.unshift({
         "text":this.newSkill
@@ -74,7 +76,7 @@ export class DomainDetailComponent implements OnInit,OnChanges,AfterViewChecked 
       this.domain.skills[0].tabs.push(tab2);
       this.domain.skills[0].tabs.push(tab3);
       this.domain.skills[0].tabs.push(tab4);
-
+      }
     });
   }
   constructor(private cdRef:ChangeDetectorRef,public dialog: MatDialog) { }
