@@ -2,6 +2,7 @@ import {Component, OnInit,Input} from '@angular/core';
 import {JsonSkillsService} from './services/json-skills.service';
 import {Domain} from './dto/domain';
 import {MatSnackBar} from '@angular/material';
+import {DomainService} from './services/domain.service';
 
 
 
@@ -16,7 +17,7 @@ export class AppComponent implements OnInit {
   selectedDomain;
   matricule;
 
-  constructor(private jsonSkillsService:JsonSkillsService,public snackBar: MatSnackBar) {
+  constructor(private jsonSkillsService:JsonSkillsService,public snackBar: MatSnackBar,private domainService:DomainService) {
   }
   ngOnInit() {
     this.loadJsonFile();
@@ -63,6 +64,14 @@ export class AppComponent implements OnInit {
         });
       }
     }
+    if(this.matricule && checkGradeNotNull){
+      this.saveInDatabase();
+    }
+  }
+
+  saveInDatabase() {
+    this.domainService.saveInDB(this.data)
+      .subscribe(() => console.log("yess"));
   }
 }
 
