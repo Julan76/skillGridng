@@ -5,10 +5,22 @@
   </h1>
 
   <form class="example-form">
-    Matricule: &nbsp;<mat-form-field style="width: 300px;" class="example-full-width">
-      <input   matInput placeholder="Saisis ton matricule (Mot de passe WTR)">
-    </mat-form-field>
+    <mat-grid-list cols="2" rowHeight="70px">
+      <mat-grid-tile>
+        Matricule: &nbsp;
+        <mat-form-field  style="width: 300px;" class="example-full-width">
+          <input maxlength="8" matInput placeholder="Saisis ton matricule (Mot de passe WTR)">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button matTooltip="Vous devez avoir parcouru tous les onglets pour sauvegarder et renseigné votre matricule " mat-raised-button color="primary">Sauvegarder</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+
+
   </form>
+
 </div>
 
 <mat-grid-list cols="5" rowHeight="27px">
