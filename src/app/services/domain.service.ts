@@ -12,7 +12,7 @@ const httpOptions = {
 
 @Injectable()
 export class DomainService {
-  private domainUrl = 'localhost:8080/save';
+  private domainUrl = 'http://localhost:8080/save';
   constructor(private http: HttpClient,  private messageService: MessageService) { }
 
   saveInDB(domain:Domain): Observable<Domain> {

@@ -65,7 +65,9 @@ export class DomainDetailComponent implements OnInit,OnChanges,AfterViewChecked 
       this.newSkill = result;
       this.domain.skills.unshift({
         "text":this.newSkill,
-        grade:null
+        grade:null,
+        _tabs:null,
+        tabs:null
       });
       const tab1= new Tab({key:0,val:true,skill:this.newSkill});
       const tab2= new Tab({key:1,val:false,skill:this.newSkill});
