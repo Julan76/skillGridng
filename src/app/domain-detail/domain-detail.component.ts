@@ -35,6 +35,7 @@ export class DomainDetailComponent implements OnInit,OnChanges,AfterViewChecked 
           this.domain.skills[i].tabs.push(tab2);
           this.domain.skills[i].tabs.push(tab3);
           this.domain.skills[i].tabs.push(tab4);
+          this.domain.skills[i].suggested=0;
 
         }
       }
@@ -67,7 +68,8 @@ export class DomainDetailComponent implements OnInit,OnChanges,AfterViewChecked 
         "text":this.newSkill,
         grade:null,
         _tabs:null,
-        tabs:null
+        tabs:null,
+        suggested:1
       });
       const tab1= new Tab({key:0,val:true,skill:this.newSkill});
       const tab2= new Tab({key:1,val:false,skill:this.newSkill});

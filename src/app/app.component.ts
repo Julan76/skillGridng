@@ -64,14 +64,31 @@ export class AppComponent implements OnInit {
         });
       }
     }
-    if(this.matricule && checkGradeNotNull){
+    if(this.matricule && checkGradeNotNull) {
+      for(const i in this.data) {
+        this.data[i].matricule=this.matricule;
+      }
       this.saveInDatabase();
     }
+  }
+  errorMessage() {
+    this.snackBar.open('Erreur durant la sauvegarde ! ', 'une erreur est survenue!', {
+      duration: 4000,
+    });
+  }
+  successMessage(){
+    this.snackBar.open('Sauvegarde effectuée ! ', 'Bien joué !', {
+      duration: 4000,
+    });
   }
 
   saveInDatabase() {
     this.domainService.saveInDB(this.data)
-      .subscribe(() => console.log("yess"));
+      .subscribe(() =>
+       // this.successMessage()
+        ,error => {
+        //  this.errorMessage();
+          });
   }
 }
 

@@ -2,6 +2,7 @@ export class Skill {
   text: string;
   grade:number;
   _tabs: Tab[]=[];
+  suggested:number;
 
   set tabs(theTab) {
     this._tabs=theTab;
