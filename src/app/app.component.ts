@@ -76,7 +76,7 @@ export class AppComponent implements OnInit {
       duration: 4000,
     });
   }
-  successMessage(){
+  successMessage() {
     this.snackBar.open('Sauvegarde effectuée ! ', 'Bien joué !', {
       duration: 4000,
     });
@@ -84,11 +84,7 @@ export class AppComponent implements OnInit {
 
   saveInDatabase() {
     this.domainService.saveInDB(this.data)
-      .subscribe(() =>
-       // this.successMessage()
-        ,error => {
-        //  this.errorMessage();
-          });
+      .subscribe();
   }
 }
 

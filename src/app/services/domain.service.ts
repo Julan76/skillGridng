@@ -6,6 +6,7 @@ import {catchError, tap} from 'rxjs/operators';
 import {MessageService} from './message.service';
 import {of} from 'rxjs/observable/of';
 import {MatSnackBar} from '@angular/material';
+import { environment } from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -13,7 +14,7 @@ const httpOptions = {
 
 @Injectable()
 export class DomainService {
-  private domainUrl = 'http://localhost:8080/save';
+  private domainUrl = environment.domainUrl;
   constructor(private http: HttpClient,  private messageService: MessageService,public snackBar: MatSnackBar) { }
 
   saveInDB(domain:Domain): Observable<Domain> {
