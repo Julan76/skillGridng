@@ -26,7 +26,7 @@ export class DomainService {
   }
   errorMessage() {
     this.snackBar.open('Erreur durant la sauvegarde ! ', 'une erreur est survenue!', {
-      duration: 4000,
+      duration: 5000,
     });
   }
   successMessage(){
