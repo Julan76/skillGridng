@@ -1,4 +1,10 @@
 # SkillGridAngular
+The project was built as training in angular 5. The Goal is to fill it's skill (front part) and to save it in 
+postgres db ( see java backend part) https://github.com/Julan76/skillGridJava .
+
+Technos : 
+Angular Material https://material.angular.io/ + angular 5 https://angular.io/guide/quickstart 
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
 
